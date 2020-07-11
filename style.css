@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    animation: noche 24s linear 6s infinite;
+}
+.forest{
+    max-width: 95%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+.flowers{
+    width: 70%;
+    position: absolute;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flowers img{
+    display: inline-block;
+    animation: flores linear 24s infinite;
+}
+.grass{
+    position: absolute;
+    left: 3rem;
+    width: 90%;
+    height: 1.1rem;
+    background-color: greenyellow;
+    border-radius: 1rem;
+}
+.sun{
+    position: absolute;
+    top: 30px;
+    right: -350px;
+    z-index: 1;
+    animation: satelite linear 24s infinite;
+}
+.moon{
+    position: absolute;
+    top: 30px;
+    right: -350px;
+    animation: satelite linear 24s infinite 12s;
+}
+.clouds img{
+    position: absolute;
+    right: -350px;
+}
+.clouds img:nth-of-type(1){
+    top: 122px;
+    transform: scaleX(-1);
+    animation: nubes 24s linear -2s infinite;
+}
+.clouds img:nth-of-type(2){
+    top: 218px;
+    animation: nubes 24s linear -1s infinite;
+}
+.clouds img:nth-of-type(3){
+    top: 80px;
+    transform: scaleX(-1);
+    z-index: 2;
+    animation: nubes 24s linear infinite;
+}
+.clouds img:nth-of-type(4){
+    top: 148px;
+    animation: nubes 24s linear 2s infinite;
+}
+.clouds img:nth-of-type(5){
+    top: 122px;
+    transform: scaleX(-1);
+    z-index: 2;
+    animation: nubes 24s linear 3s infinite;
+}
+.clouds img:nth-of-type(6){
+    top: 218px;
+    animation: nubes 24s linear 4s infinite;
+}
+.clouds img:nth-of-type(7){
+    top: 80px;
+    transform: scaleX(-1);
+    animation: nubes 24s linear 6s infinite;
+}
+.clouds img:nth-of-type(8){
+    top: 148px;
+    animation: nubes 24s linear 7s infinite;
+}
+@keyframes flores{
+    0%{
+        margin-bottom: -200px;
+    }
+    15%{
+        margin-bottom: 15px;
+    }
+    45%{
+        margin-bottom: 15px;
+    }
+    60%{
+        margin-bottom: -200px;
+    }
+    100%{
+        margin-bottom: -200px;
+    }
+}
+@keyframes satelite{
+    0%{
+        right: -360px;
+    }
+    50%{
+        right: 1480px;
+    }
+    100%{
+        right: 1480px;
+    }
+}
+@keyframes nubes {
+    0% {
+        right: -360px;
+    }
+    40% {
+        right: 1480px;
+    }
+    100% {
+        right: 1480px;
+    }
+}
+@keyframes noche {
+    0% {
+        background: white;
+    }
+    10% {
+        background: white;
+    }
+    30% {
+        background: #492323;
+    }
+    50% {
+        background: black;
+    }
+    70% {
+        background: #492323;
+    }
+    90% {
+        background: white;
+    }
+    100% {
+        background: white;
+    }
+}
