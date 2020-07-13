@@ -13,6 +13,73 @@
     overflow: hidden;
     animation: noche 24s linear 6s infinite;
 }
+
+/* TERMÓMETRO */
+
+.thermometer{
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.thermometer:after{
+    content: '';
+    position: absolute;
+    z-index: 5;
+    width: 2.1rem;
+    height: 2.1rem;
+    background-color: red;
+    border-radius: 50%;
+    align-self: flex-end;
+}
+.mercury{
+    position: relative;
+    z-index: 5;
+    width: .8rem;
+    height: 12rem;
+    background-color: transparent;
+    border: .2rem red solid;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.mercury div{
+    z-index: 6;
+    width: 100%;
+    height: 10%;
+    border-bottom: .15rem solid brown;
+}
+.mercury div:nth-of-type(6){
+    background-color: red;
+}
+.mercury div:nth-of-type(7){
+    background-color: red;
+}
+.mercury div:nth-of-type(8){
+    background-color: red;
+}
+.mercury div:nth-of-type(9){
+    background-color: red;
+    border: none;
+}
+.mercury div:nth-of-type(10){
+    visibility: hidden;
+}
+.mercury p{
+    position: absolute;
+    z-index: 6;
+    margin-left: 1.4rem;
+    margin-top: .6rem;
+    color: brown;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* IMÁGENES */
+
 .forest{
     max-width: 95%;
     align-self: center;
@@ -41,16 +108,17 @@
 .sun{
     position: absolute;
     top: 30px;
-    right: -350px;
     z-index: 1;
     animation: satelite linear 24s infinite;
 }
 .moon{
     position: absolute;
     top: 30px;
-    right: -350px;
-    animation: satelite linear 24s infinite 12s;
+    animation: satelite linear 24s infinite -12s;
 }
+
+/* NUBES */
+
 .clouds img{
     position: absolute;
     right: -350px;
@@ -93,6 +161,9 @@
     top: 148px;
     animation: nubes 24s linear 7s infinite;
 }
+
+/* ANIMACIONES */
+
 @keyframes flores{
     0%{
         margin-bottom: -200px;
