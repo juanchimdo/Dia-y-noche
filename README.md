@@ -1,3 +1,3 @@
 # DÍA Y NOCHE 🌅🌞🌙
 
-https://juanchimdo.github.io/Dia-y-noche/
+https://juanchimdo.github.io/JS_Animations/
